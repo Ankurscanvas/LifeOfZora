@@ -154,6 +154,27 @@ body { background:var(--cream); color:var(--deep); font-family:'DM Sans',sans-se
   display:block;
 }
 .strip-photo:hover img { transform:scale(1.05); }
+           <!-- BLOG POSTS -->
+<section style="padding:60px 80px; background:#faf7f2;">
+
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:40px; font-weight:300; margin-bottom:30px;">
+    Latest Moments
+  </h2>
+
+  {% for post in site.posts %}
+    <div style="margin-bottom:25px;">
+      <a href="{{ post.url | relative_url }}" style="text-decoration:none; color:#3d2b1f;">
+        <h3 style="font-size:26px; font-weight:400;">
+          {{ post.title }}
+        </h3>
+      </a>
+      <p style="font-size:12px; color:#8b6f4e;">
+        {{ post.date | date: "%d %B %Y" }}
+      </p>
+    </div>
+  {% endfor %}
+
+</section>
 
 /* ABOUT */
 .about {
