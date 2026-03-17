@@ -116,7 +116,27 @@ body { background:var(--cream); color:var(--deep); font-family:'DM Sans',sans-se
   width:1px; height:36px; background:var(--clay);
   animation:scrollPulse 2s ease-in-out infinite;
 }
+<!-- BLOG POSTS -->
+<section style="padding:80px; background:#faf7f2;">
+  <h2 style="font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:300; margin-bottom:40px;">
+    Latest Moments
+  </h2>
 
+  <div style="max-width:700px;">
+    {% for post in site.posts %}
+      <div style="margin-bottom:30px; padding-bottom:20px; border-bottom:1px solid #e8d9c4;">
+        <a href="{{ post.url }}" style="text-decoration:none; color:#3d2b1f;">
+          <h3 style="font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:400;">
+            {{ post.title }}
+          </h3>
+        </a>
+        <p style="font-size:12px; color:#8b6f4e;">
+          {{ post.date | date: "%B %d, %Y" }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
 /* PHOTO STRIP */
 .photo-strip {
   display:flex; gap:0; overflow:hidden; height:260px;
