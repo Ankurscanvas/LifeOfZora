@@ -1,0 +1,1 @@
+Tracking Strength from Day One - LifeOfZora - is a personal growth journal dedicated to documenting Zorawar’s early journey through life. The current focus is on tracking his weight, monitoring feeding patterns, and ensuring he achieves a healthy milestone of 6.2 kg by his third month.
